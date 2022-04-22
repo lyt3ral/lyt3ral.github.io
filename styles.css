@@ -1,51 +1,64 @@
-* {
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0;
   padding: 0;
+  background-color: #090809;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 1;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.5em;
+}
+
+.nav ul li {
+  text-decoration: none;
+}
+
+.navlink {
+  text-decoration: none;
+  color: white;
+}
+
+.profile {
+  display: flex;
+  flex: 1;
+  flex-flow: column wrap;
+  justify-items: center;
+  align-items: center;
+  padding-top: 20vh;
+}
+
+#firstLine {
+  font-size: 4em;
+}
+
+#secondLine {
+  font-size: 1.5em;
+}
+
+p {
   margin: 0;
 }
 
-html,
-body {
-  height: 100%;
-  width: 100%;
-  background-color: #a8dadc;
-  color: #090809;
-}
-
-main {
+/* .filler {
   display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: space-around;
-  padding-left: 15vw;
-  padding-top: 5vw;
-}
-
-nav ul {
-  padding-top: 1vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-size: 1.5em;
-  width: 100%;
-}
-
-h1 {
-  color: #457b9d;
-}
-
-h1:nth-child(2) {
-  color: #1d3557;
-}
-
-a {
-  text-decoration: none;
-  color: #f1faee;
-}
-
-.pimage {
-  width: 443px;
-  height: 591px;
-  content: url("profile.jpg");
-  border-radius: 1vw;
-  border-color: #1d3557;
-}
+} */
